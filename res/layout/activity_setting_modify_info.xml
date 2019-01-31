@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ScrollView android:scrollbars="none" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <LinearLayout android:orientation="vertical" android:background="@android:color/white" android:paddingBottom="40.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <RelativeLayout android:id="@id/rl_top" android:background="@color/common_half_transparent_blue" android:layout_width="fill_parent" android:layout_height="225.0dip">
+                <com.dmzj.manhua.views.HeaderBackImageView android:id="@id/img_header_bac" android:layout_width="fill_parent" android:layout_height="fill_parent" android:src="@drawable/img_ucenter_def_bac" android:scaleType="centerCrop" />
+                <View android:id="@id/view_mask_header" android:background="@drawable/common_top_bg" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+                <com.dmzj.manhua.views.CircleImageView android:id="@id/iv_head" android:layout_width="80.0dip" android:layout_height="80.0dip" android:layout_marginTop="30.0dip" android:src="@drawable/img_def_head" android:layout_centerHorizontal="true" app:border_width="5.0dip" app:border_color="@color/comm_gray_lower" xmlns:app="http://schemas.android.com/apk/res-auto" />
+                <TextView android:textSize="@dimen/txt_size_second" android:textColor="@android:color/white" android:id="@id/tv_head" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/txt_size_third" android:text="@string/settings_modify_head" android:layout_below="@id/iv_head" android:layout_centerHorizontal="true" android:onClick="onClick" />
+            </RelativeLayout>
+            <RelativeLayout android:gravity="center_vertical" android:id="@id/rl_name" android:background="@drawable/selector_shape_white_gray_low_small" android:clickable="true" android:layout_width="fill_parent" android:layout_height="@dimen/line_option_button_height" android:onClick="onClick">
+                <TextView android:textSize="@dimen/txt_size_second" android:textColor="@color/comm_gray_high" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/common_ui_horizontal_marg" android:text="@string/settings_modify_name" android:layout_alignParentLeft="true" />
+                <LinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/common_ui_horizontal_marg" android:layout_alignParentRight="true">
+                    <TextView android:textColor="@color/comm_gray_low" android:id="@id/tv_name" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                    <ImageView android:clickable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:src="@drawable/img_more_s_grey" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+                </LinearLayout>
+            </RelativeLayout>
+            <include layout="@layout/divider_line_black" />
+            <LinearLayout android:gravity="center_vertical" android:id="@id/ll_signature" android:background="@drawable/selector_shape_white_gray_low_small" android:clickable="true" android:layout_width="fill_parent" android:layout_height="100.0dip" android:onClick="onClick">
+                <TextView android:textSize="@dimen/txt_size_second" android:textColor="@color/comm_gray_high" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/common_ui_horizontal_marg" android:text="@string/settings_modify_signature" />
+                <TextView android:textSize="@dimen/txt_size_third" android:textColor="@color/comm_gray_low" android:id="@id/tv_signature" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginLeft="30.0dip" android:layout_marginRight="@dimen/common_ui_horizontal_marg" android:layout_weight="1.0" />
+                <ImageView android:layout_gravity="center" android:clickable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10.0dip" android:src="@drawable/img_more_s_grey" />
+            </LinearLayout>
+            <include layout="@layout/divider_line_black" />
+            <RelativeLayout android:gravity="center_vertical" android:id="@id/rl_sex" android:background="@drawable/selector_shape_white_gray_low_small" android:clickable="true" android:layout_width="fill_parent" android:layout_height="@dimen/line_option_button_height" android:onClick="onClick">
+                <TextView android:textSize="@dimen/txt_size_second" android:textColor="@color/comm_gray_high" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/common_ui_horizontal_marg" android:text="@string/settings_modify_sex" android:layout_alignParentLeft="true" />
+                <LinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/common_ui_horizontal_marg" android:layout_alignParentRight="true">
+                    <TextView android:textColor="@color/comm_gray_low" android:id="@id/tv_sex" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/common_ui_horizontal_marg" android:layout_alignParentRight="true" />
+                    <ImageView android:clickable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/img_more_s_grey" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+                </LinearLayout>
+            </RelativeLayout>
+            <include layout="@layout/divider_line_black" />
+            <RelativeLayout android:gravity="center_vertical" android:id="@id/rl_birth" android:background="@drawable/selector_shape_white_gray_low_small" android:clickable="true" android:layout_width="fill_parent" android:layout_height="@dimen/line_option_button_height" android:onClick="onClick">
+                <TextView android:textSize="@dimen/txt_size_second" android:textColor="@color/comm_gray_high" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/common_ui_horizontal_marg" android:text="@string/settings_modify_birth" android:layout_alignParentLeft="true" />
+                <LinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/common_ui_horizontal_marg" android:layout_alignParentRight="true">
+                    <TextView android:textColor="@color/comm_gray_low" android:id="@id/tv_birth" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/common_ui_horizontal_marg" android:layout_alignParentRight="true" />
+                    <ImageView android:clickable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/img_more_s_grey" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+                </LinearLayout>
+            </RelativeLayout>
+            <include layout="@layout/divider_line_black" />
+            <RelativeLayout android:gravity="center_vertical" android:id="@id/rl_sign" android:background="@drawable/selector_shape_white_gray_low_small" android:clickable="true" android:layout_width="fill_parent" android:layout_height="@dimen/line_option_button_height" android:onClick="onClick">
+                <TextView android:textSize="@dimen/txt_size_second" android:textColor="@color/comm_gray_high" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/common_ui_horizontal_marg" android:text="@string/settings_modify_sign" android:layout_alignParentLeft="true" />
+                <LinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/common_ui_horizontal_marg" android:layout_alignParentRight="true">
+                    <TextView android:textColor="@color/comm_gray_low" android:id="@id/tv_sign" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/common_ui_horizontal_marg" android:layout_alignParentRight="true" />
+                    <ImageView android:clickable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/img_more_s_grey" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+                </LinearLayout>
+            </RelativeLayout>
+            <include layout="@layout/divider_line_black" />
+            <RelativeLayout android:gravity="center_vertical" android:id="@id/rl_blood" android:background="@drawable/selector_shape_white_gray_low_small" android:clickable="true" android:layout_width="fill_parent" android:layout_height="@dimen/line_option_button_height" android:onClick="onClick">
+                <TextView android:textSize="@dimen/txt_size_second" android:textColor="@color/comm_gray_high" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/common_ui_horizontal_marg" android:text="@string/settings_modify_blood" android:layout_alignParentLeft="true" />
+                <LinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/common_ui_horizontal_marg" android:layout_alignParentRight="true">
+                    <TextView android:textColor="@color/comm_gray_low" android:id="@id/tv_blood" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/common_ui_horizontal_marg" android:layout_alignParentRight="true" />
+                    <ImageView android:clickable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/img_more_s_grey" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+                </LinearLayout>
+            </RelativeLayout>
+            <LinearLayout android:background="@color/comm_user_line" android:layout_width="fill_parent" android:layout_height="8.0dip" />
+            <RelativeLayout android:gravity="center_vertical" android:id="@id/rl_binding" android:background="@drawable/selector_shape_white_gray_low_small" android:clickable="true" android:layout_width="fill_parent" android:layout_height="@dimen/line_option_button_height" android:onClick="onClick">
+                <TextView android:textSize="@dimen/txt_size_second" android:textColor="@color/comm_gray_high" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/common_ui_horizontal_marg" android:text="@string/settings_modify_binding" android:layout_alignParentLeft="true" />
+                <LinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true">
+                    <TextView android:id="@id/tv_mobile_light" android:background="@drawable/icon_mobile_no_light" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10.0dip" android:layout_alignParentLeft="true" />
+                    <TextView android:id="@id/tv_email_light" android:background="@drawable/icon_email_no_light" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10.0dip" android:layout_alignParentLeft="true" />
+                    <TextView android:id="@id/tv_weixin_light" android:background="@drawable/icon_weixin_no_light" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10.0dip" android:layout_alignParentLeft="true" />
+                    <TextView android:id="@id/tv_weibo_light" android:background="@drawable/icon_weibo_no_light" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10.0dip" android:layout_alignParentLeft="true" />
+                    <TextView android:id="@id/tv_qq_light" android:background="@drawable/icon_qq_no_light" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10.0dip" android:layout_alignParentLeft="true" />
+                    <ImageView android:clickable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="9.0dip" android:src="@drawable/img_more_s_grey" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+                </LinearLayout>
+            </RelativeLayout>
+            <include layout="@layout/divider_line_black" />
+            <RelativeLayout android:gravity="center_vertical" android:id="@id/rl_password" android:background="@drawable/selector_shape_white_gray_low_small" android:clickable="true" android:layout_width="fill_parent" android:layout_height="@dimen/line_option_button_height" android:onClick="onClick">
+                <TextView android:textSize="@dimen/txt_size_second" android:textColor="@color/comm_gray_high" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/common_ui_horizontal_marg" android:text="@string/settings_modify_password" android:layout_alignParentLeft="true" />
+                <LinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/common_ui_horizontal_marg" android:layout_alignParentRight="true">
+                    <TextView android:textColor="@color/comm_gray_low" android:id="@id/tv_password" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/common_ui_horizontal_marg" android:text="未设置" android:layout_alignParentRight="true" />
+                    <ImageView android:clickable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/img_more_s_grey" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+                </LinearLayout>
+            </RelativeLayout>
+            <include layout="@layout/divider_line_black" />
+            <TextView android:textSize="@dimen/txt_size_second" android:textColor="@android:color/white" android:gravity="center" android:id="@id/btn_confirm" android:background="@drawable/selector_comm_btn_blue" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="@dimen/view_common_btn_hei" android:layout_marginLeft="10.0dip" android:layout_marginTop="10.0dip" android:layout_marginRight="10.0dip" android:text="@string/txt_save" />
+        </LinearLayout>
+    </ScrollView>
+    <com.dmzj.manhua.views.MyImageView android:id="@id/iv_back" android:layout_width="50.0dip" android:layout_height="50.0dip" android:src="@drawable/img_round_back" android:scaleType="center" />
+</RelativeLayout>

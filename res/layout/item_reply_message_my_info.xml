@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:id="@id/comment_new_item_reply" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="vertical" android:id="@id/ll_new_comment_content" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <TextView android:textSize="@dimen/txt_size_second" android:textColor="@color/comm_gray_mid" android:ellipsize="end" android:id="@id/txt_content" android:paddingLeft="10.0dip" android:paddingTop="10.0dip" android:paddingRight="10.0dip" android:clickable="true" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="2.0dip" android:text="测试" android:lineSpacingExtra="2.0dip" android:lineSpacingMultiplier="1.5" />
+            <TextView android:textSize="@dimen/txt_size_second" android:textColor="@color/comm_gray_low" android:ellipsize="end" android:id="@id/txt_content_two" android:paddingLeft="10.0dip" android:paddingTop="10.0dip" android:paddingRight="10.0dip" android:paddingBottom="10.0dip" android:visibility="gone" android:clickable="true" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="2.0dip" android:text="该评论已被删除" android:lineSpacingExtra="2.0dip" android:lineSpacingMultiplier="1.5" />
+            <TextView android:textSize="@dimen/txt_size_third" android:textColor="@color/color_launch_bac" android:gravity="right" android:id="@id/txt_content_show_all" android:visibility="invisible" android:clickable="true" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginRight="10.0dip" android:layout_marginBottom="3.0dip" android:text="显示全部" />
+            <TextView android:textSize="@dimen/txt_size_third" android:textColor="@color/color_launch_bac" android:gravity="right" android:id="@id/txt_content_hide_all" android:visibility="invisible" android:clickable="true" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginRight="10.0dip" android:layout_marginBottom="3.0dip" android:text="收起" />
+        </LinearLayout>
+        <TextView android:textSize="8.0dip" android:textColor="@android:color/white" android:gravity="center" android:id="@id/tv_floor_comment" android:background="@drawable/icon_comment_floor" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="4.0dip" android:layout_marginRight="6.0dip" android:text="1" android:layout_alignParentTop="true" android:layout_alignParentRight="true" />
+        <View android:id="@id/line_bottom" android:background="@android:color/white" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_below="@id/ll_new_comment_content" />
+        <LinearLayout android:orientation="vertical" android:id="@id/ll_comment_load_more_comments" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/line_bottom">
+            <TextView android:textSize="@dimen/txt_size_third" android:textColor="@color/item_comment_gone_text" android:gravity="center" android:id="@id/btn_load_more_comments" android:background="@drawable/selector_comm_btn_gray" android:layout_width="fill_parent" android:layout_height="35.0dip" android:text="展开隐藏次元" />
+            <TextView android:background="@android:color/white" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+        </LinearLayout>
+    </RelativeLayout>
+</LinearLayout>

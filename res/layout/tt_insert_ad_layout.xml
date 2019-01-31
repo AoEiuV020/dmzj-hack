@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/insert_ad_img" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="32.0dip" android:scaleType="fitXY" />
+    <ImageView android:layout_gravity="center|right|top" android:id="@id/insert_dislike_icon_img" android:layout_width="20.0dip" android:layout_height="20.0dip" android:src="@drawable/tt_dislike_icon" android:scaleType="fitXY" />
+    <ImageView android:layout_gravity="bottom|center|right" android:id="@id/insert_ad_logo" android:background="@drawable/tt_ad_logo_small" android:layout_width="20.0dip" android:layout_height="20.0dip" android:layout_marginRight="10.0dip" android:layout_marginBottom="15.0dip" />
+</FrameLayout>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:id="@id/layout_main" android:background="@android:color/black" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.dmzj.manhua.views.EventImageView android:layout_gravity="center" android:id="@id/image" android:layout_width="fill_parent" android:layout_height="fill_parent" android:adjustViewBounds="true" android:contentDescription="@string/app_name" />
+    <RelativeLayout android:id="@id/layout_ad" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    <ProgressBar android:layout_gravity="center" android:id="@id/loading" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    <TextView android:textSize="@dimen/txt_size_second" android:textColor="@android:color/white" android:layout_gravity="center" android:id="@id/loading_number" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="1" />
+    <TextView android:textSize="@dimen/txt_size_second" android:textColor="@android:color/white" android:gravity="center" android:layout_gravity="center" android:id="@id/txt_terminal" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="@dimen/view_terminal_view_height" android:text="@string/browse_terminal_warning" />
+</FrameLayout>

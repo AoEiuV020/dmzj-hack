@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textColor="@color/main_index_tab_txt_selector" android:gravity="center" android:id="@id/tab_item_tv" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="ssssss" />
+    <ImageView android:id="@id/tab_item_tv_my_unread_count" android:visibility="gone" android:layout_width="8.0dip" android:layout_height="8.0dip" android:layout_marginTop="4.0dip" android:layout_marginRight="24.0dip" android:src="@drawable/tab_message_unread" android:layout_alignTop="@id/tab_item_tv" android:layout_alignParentRight="true" />
+</RelativeLayout>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/layout_main" android:background="@color/comm_gray_lower" android:layout_width="fill_parent" android:layout_height="@dimen/line_option_button_height"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="@dimen/txt_size_second" android:textColor="@color/comm_gray_high" android:gravity="center_vertical" android:id="@id/txt_title" android:background="@drawable/selector_shape_white_gray_low_small" android:paddingLeft="15.0dip" android:clickable="true" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginBottom="1.0px" android:text="@string/more_set_showmodelset" android:drawablePadding="10.0dip" />
+    <TextView android:textColor="@color/comm_gray_mid" android:id="@id/txt_shower" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="15.0dip" android:text="@string/more_set_hscreen" android:drawableRight="@drawable/img_more_s" android:drawablePadding="3.0dip" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+    <ImageView android:id="@id/img_switch" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="15.0dip" android:src="@drawable/switch_off" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+</RelativeLayout>

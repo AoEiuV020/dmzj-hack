@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.dmzj.manhua.base.pull.PullToRefreshListView android:id="@id/pull_refresh_list" android:fadingEdge="none" android:layout_width="fill_parent" android:layout_height="fill_parent" android:cacheColorHint="#00000000" android:layout_below="@id/layout_option_layer" android:fastScrollEnabled="false" android:headerDividersEnabled="false" android:footerDividersEnabled="false" android:smoothScrollbar="true" ptr:ptrHeaderBackground="@color/my_pull_refresh_header_backgroud" ptr:ptrHeaderTextColor="@color/my_pull_refresh_txt_color" ptr:ptrMode="both" ptr:ptrAnimationStyle="flip" ptr:ptrScrollingWhileRefreshingEnabled="true" ptr:ptrListViewExtrasEnabled="false" xmlns:ptr="http://schemas.android.com/apk/res-auto" />
+    <com.dmzj.manhua.views.MyImageView android:id="@id/top_view" android:layout_marginBottom="60.0dip" style="@style/top_arraw" />
+</RelativeLayout>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="right" android:orientation="vertical" android:padding="10.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:id="@id/ll_show_all_right_time" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:layout_gravity="center" android:background="@color/comm_gray_low_smalls" android:layout_width="0.0dip" android:layout_height="1.0dip" android:layout_marginLeft="25.0dip" android:layout_marginRight="15.0dip" android:layout_weight="1.0" />
+        <TextView android:textSize="12.0sp" android:textColor="@color/comm_gray_mid" android:gravity="center" android:id="@id/text_show_all_right_time" android:background="@drawable/bg_time_message_all" android:paddingLeft="12.0dip" android:paddingTop="1.0dip" android:paddingRight="12.0dip" android:paddingBottom="1.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="ssss" />
+        <TextView android:layout_gravity="center" android:background="@color/comm_gray_low_smalls" android:layout_width="0.0dip" android:layout_height="1.0dip" android:layout_marginLeft="15.0dip" android:layout_marginRight="25.0dip" android:layout_weight="1.0" />
+    </LinearLayout>
+    <LinearLayout android:gravity="right" android:orientation="horizontal" android:id="@id/ll_message_content" android:padding="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:gravity="right" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginLeft="30.0dip" android:layout_weight="5.0">
+            <TextView android:textSize="12.0sp" android:textColor="@color/comm_gray_mid" android:gravity="center|right" android:layout_gravity="center" android:id="@id/text_right_time" android:paddingRight="12.0dip" android:layout_width="0.0dip" android:layout_height="wrap_content" android:minWidth="40.0dip" android:text="16:18" android:layout_weight="1.0" />
+            <TextView android:textSize="15.0sp" android:textColor="@android:color/white" android:gravity="center|left" android:id="@id/text_right" android:background="@drawable/bg_message_center_purple" android:paddingLeft="15.0dip" android:paddingTop="8.0dip" android:paddingRight="15.0dip" android:paddingBottom="8.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxWidth="190.0dip" android:text="你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好" />
+        </LinearLayout>
+        <com.dmzj.manhua.views.MyImageView android:id="@id/img_head_right" android:background="@drawable/img_def_head" android:layout_width="35.0dip" android:layout_height="35.0dip" android:layout_marginLeft="10.0dip" android:layout_toRightOf="@id/txt_lock" />
+    </LinearLayout>
+    <TextView android:textColor="@color/comm_gray_mid" android:gravity="center" android:id="@id/tv_shield_show_name" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="sssss" />
+</LinearLayout>

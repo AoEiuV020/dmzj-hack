@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:background="@android:color/white" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <com.dmzj.manhua.base.pull.PullToRefreshListView android:id="@id/pull_refresh_list" android:scrollbars="none" android:fadingEdge="none" android:layout_width="fill_parent" android:layout_height="fill_parent" android:cacheColorHint="#00000000" android:minHeight="100.0dip" android:fastScrollEnabled="false" android:headerDividersEnabled="false" android:footerDividersEnabled="false" android:smoothScrollbar="true" ptr:ptrHeaderBackground="@color/my_pull_refresh_header_backgroud" ptr:ptrHeaderTextColor="@color/my_pull_refresh_txt_color" ptr:ptrAnimationStyle="flip" ptr:ptrScrollingWhileRefreshingEnabled="true" ptr:ptrListViewExtrasEnabled="false" xmlns:ptr="http://schemas.android.com/apk/res-auto" />
+        <LinearLayout android:orientation="vertical" android:id="@id/layout_inputer_show_list" android:background="@color/comm_gray_low_small" android:clickable="true" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/pull_refresh_list" android:layout_alignParentBottom="true">
+            <TextView android:textSize="@dimen/txt_size_second" android:textColor="@color/color_selector_comm_gray_high" android:gravity="center" android:id="@id/edit_inputer" android:background="@color/comm_gray_low_small" android:paddingLeft="13.0dip" android:paddingTop="19.0dip" android:paddingRight="13.0dip" android:paddingBottom="19.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="更多评论" />
+        </LinearLayout>
+        <com.dmzj.manhua.views.MyImageView android:id="@id/top_view" android:layout_marginBottom="60.0dip" style="@style/top_arraw" />
+    </RelativeLayout>
+</LinearLayout>

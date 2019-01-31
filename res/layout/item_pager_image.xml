@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.dmzj.manhua.views.MyViewPager android:id="@id/viewpager" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <com.dmzj.manhua.shower.PhotoView android:layout_gravity="center" android:id="@id/image" android:layout_width="fill_parent" android:layout_height="fill_parent" android:adjustViewBounds="true" android:contentDescription="@string/app_name" />
+    <RelativeLayout android:id="@id/layout_ad" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <ProgressBar android:layout_gravity="center" android:id="@id/loading" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    <TextView android:textSize="@dimen/txt_size_second" android:textColor="@android:color/white" android:layout_gravity="center" android:id="@id/loading_number" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="1" />
+    <TextView android:textSize="@dimen/txt_size_second" android:textColor="@android:color/white" android:gravity="center" android:layout_gravity="center" android:id="@id/txt_terminal" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="80.0dip" android:text="@string/browse_terminal_warning" />
+    <RelativeLayout android:id="@id/layout_oprations" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <com.dmzj.manhua.views.MySelctorTextView android:textSize="@dimen/txt_size_second" android:textColor="@android:color/white" android:gravity="center" android:id="@id/txt_share" android:background="@drawable/img_commbtn_trans" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="20.0dip" android:layout_marginBottom="20.0dip" android:text="@string/text_share" android:layout_alignParentRight="true" android:layout_alignParentBottom="true" />
+        <com.dmzj.manhua.views.MySelctorTextView android:textSize="@dimen/txt_size_second" android:textColor="@android:color/white" android:gravity="center" android:id="@id/txt_save" android:background="@drawable/img_commbtn_trans" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10.0dip" android:layout_marginBottom="20.0dip" android:text="@string/text_save" android:layout_toLeftOf="@id/txt_share" android:layout_alignParentBottom="true" />
+    </RelativeLayout>
+</FrameLayout>

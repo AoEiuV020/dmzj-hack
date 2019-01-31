@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:id="@id/layout_main" android:background="@color/color_launch_bac" android:clickable="true" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <ImageView android:id="@id/img_lauch_word_02" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="10.0dip" android:src="@drawable/img_lauch_word_02" android:layout_alignParentBottom="true" />
+        <ImageView android:id="@id/img_lauch_word" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="5.0dip" android:src="@drawable/img_lauch_word_01" android:layout_above="@id/img_lauch_word_02" />
+        <ImageView android:id="@id/img_lauch_bitch" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="20.0dip" android:src="@drawable/img_lauch_bitch" android:scaleType="centerInside" android:layout_above="@id/img_lauch_word" />
+        <com.dmzj.manhua.ad.ADImageView android:id="@id/img_ad_view" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+        <RelativeLayout android:id="@id/dm_ad_container" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_above="@id/img_lauch_word" />
+        <LinearLayout android:orientation="horizontal" android:id="@id/ll_add_web_view" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+        <TextView android:id="@id/ad_corner_txt" android:visibility="gone" android:layout_marginLeft="3.0dip" android:layout_alignBottom="@id/img_ad_view" style="@style/style_ad_corner" />
+        <RelativeLayout android:id="@id/layout_ad" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_above="@id/img_lauch_word" />
+    </RelativeLayout>
+</FrameLayout>

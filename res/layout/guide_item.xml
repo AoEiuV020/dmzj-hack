@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:id="@id/layout_main" android:background="@color/color_guide_p1" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:background="@drawable/img_guide_little_clow" android:layout_width="fill_parent" android:layout_height="145.0dip" android:layout_alignParentBottom="true" />
+    <View android:id="@id/layout_mask" android:background="@color/color_guide_p1" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <ImageView android:id="@id/img_clowd_big" android:background="@drawable/img_guide_big_clow" android:layout_width="fill_parent" android:layout_height="128.0dip" android:layout_alignParentBottom="true" />
+    <ImageView android:id="@id/img_guide_navi" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="40.0dip" android:src="@drawable/img_guide_n1" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" />
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginBottom="120.0dip">
+        <ImageView android:layout_gravity="center_horizontal" android:id="@id/img_splash_word" android:paddingBottom="10.0dip" android:layout_width="wrap_content" android:layout_height="0.0dip" android:src="@drawable/img_guide_w1" android:scaleType="fitEnd" android:layout_weight="1.0" />
+        <ImageView android:layout_gravity="center_horizontal" android:id="@id/img_splash" android:layout_width="wrap_content" android:layout_height="0.0dip" android:src="@drawable/img_guide_p1" android:scaleType="fitStart" android:layout_weight="3.0" />
+        <com.dmzj.manhua.views.MyImageView android:layout_gravity="center_horizontal" android:id="@id/img_splash_go" android:clickable="true" android:layout_width="wrap_content" android:layout_height="37.0dip" android:src="@drawable/img_guide_b1" android:scaleType="centerInside" />
+    </LinearLayout>
+    <ImageView android:id="@id/splash_close" android:visibility="gone" android:clickable="true" android:layout_width="27.0dip" android:layout_height="27.0dip" android:layout_marginTop="10.0dip" android:layout_marginRight="10.0dip" android:src="@drawable/img_del_icon" android:layout_alignParentRight="true" />
+</RelativeLayout>

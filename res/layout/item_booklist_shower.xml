@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/layout_main" android:background="@drawable/selector_shape_white_gray_low_small" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="5.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <View android:background="@color/comm_gray_lower" android:layout_width="fill_parent" android:layout_height="1.0px" android:layout_marginLeft="10.0dip" android:layout_alignParentBottom="true" />
+    <com.dmzj.manhua.views.MyImageView android:id="@id/img_head" android:layout_width="35.0dip" android:layout_height="50.0dip" android:layout_marginLeft="10.0dip" android:layout_marginTop="8.0dip" android:layout_marginBottom="8.0dip" />
+    <TextView android:textSize="@dimen/txt_size_first" android:textColor="@color/comm_gray_high" android:id="@id/txt_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginTop="12.0dip" android:text="AAA" android:layout_toRightOf="@id/img_head" />
+    <TextView android:textSize="@dimen/txt_size_second" android:textColor="@color/comm_gray_mid" android:id="@id/txt_content" android:paddingBottom="3.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="8.0dip" android:layout_marginRight="18.0dip" android:text="--" android:layout_below="@id/txt_name" android:layout_alignLeft="@id/txt_name" />
+    <TextView android:textSize="@dimen/txt_size_second" android:textColor="@color/comm_gray_mid" android:id="@id/txt_stores" android:paddingBottom="3.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:text="--" android:layout_toRightOf="@id/txt_content" android:layout_below="@id/txt_content" android:layout_alignTop="@id/txt_content" />
+</RelativeLayout>

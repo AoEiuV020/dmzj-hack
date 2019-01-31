@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/layout_main" android:background="@drawable/selector_shape_white_gray_low_small" android:clickable="true" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="50.0dip">
+        <ImageView android:id="@id/img_head" android:layout_width="35.0dip" android:layout_height="35.0dip" android:layout_marginLeft="10.0dip" android:layout_centerVertical="true" />
+        <TextView android:textSize="@dimen/txt_size_second" android:textColor="@color/comm_gray_high" android:id="@id/txt_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:text="NAME" android:layout_toRightOf="@id/img_head" android:layout_centerVertical="true" />
+        <TextView android:textSize="@dimen/txt_size_third" android:textColor="@color/comm_gray_mid" android:id="@id/txt_time" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10.0dip" android:text="00" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+    </RelativeLayout>
+    <TextView android:textSize="@dimen/txt_size_second" android:textColor="@color/comm_gray_high" android:id="@id/txt_content" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginRight="10.0dip" android:text="CONTENT" />
+    <com.dmzj.manhua.views.MyImageView android:id="@id/pic_container" android:layout_width="120.0dip" android:layout_height="80.0dip" android:layout_marginLeft="10.0dip" android:layout_marginTop="5.0dip" android:scaleType="centerCrop" />
+    <LinearLayout android:orientation="horizontal" android:id="@id/layout_option_layer" android:background="@drawable/shape_rectangle_white_top_gray_line" android:layout_width="fill_parent" android:layout_height="@dimen/line_option_button_height" android:layout_marginTop="8.0dip">
+        <RelativeLayout android:visibility="gone" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+            <TextView android:textSize="@dimen/txt_size_third" android:textColor="@color/color_selector_comm_gray_mid" android:gravity="center" android:id="@id/op_txt_second" android:layout_width="wrap_content" android:layout_height="fill_parent" android:text="@string/news_opr_praise" android:drawableLeft="@drawable/img_praise_blue" android:drawablePadding="2.0dip" android:layout_centerInParent="true" />
+        </RelativeLayout>
+        <ImageView android:visibility="gone" android:layout_width="1.0dip" android:layout_height="fill_parent" android:src="@drawable/intro_navi_vline" />
+        <RelativeLayout android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+            <TextView android:textSize="@dimen/txt_size_third" android:textColor="@color/color_selector_comm_gray_mid" android:gravity="center" android:id="@id/op_txt_third" android:layout_width="wrap_content" android:layout_height="fill_parent" android:text="@string/news_opr_share" android:drawableLeft="@drawable/img_share_icon" android:drawablePadding="2.0dip" android:layout_centerInParent="true" />
+        </RelativeLayout>
+        <ImageView android:layout_width="1.0dip" android:layout_height="fill_parent" android:src="@drawable/intro_navi_vline" />
+        <RelativeLayout android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+            <TextView android:textSize="@dimen/txt_size_third" android:textColor="@color/color_selector_comm_gray_mid" android:gravity="center" android:id="@id/op_txt_first" android:layout_width="wrap_content" android:layout_height="fill_parent" android:text="@string/news_opr_comment" android:drawableLeft="@drawable/img_discuss_gray" android:drawablePadding="2.0dip" android:layout_centerInParent="true" />
+        </RelativeLayout>
+    </LinearLayout>
+    <View android:background="@drawable/img_common_list_divider" android:layout_width="fill_parent" android:layout_height="7.0dip" />
+</LinearLayout>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/layout_main" android:background="@drawable/selector_shape_white_gray_low_small" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:id="@id/ll_game_get_bag_all" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:gravity="center" android:layout_gravity="center" android:orientation="horizontal" android:id="@id/ll_game_all" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="20.0dip" android:layout_marginBottom="10.0dip">
+            <ImageView android:id="@id/img_head" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="14.0dip" android:minWidth="@dimen/view_game_width" android:minHeight="@dimen/view_game_width" android:layout_centerInParent="true" />
+            <RelativeLayout android:layout_gravity="center" android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_marginLeft="14.0dip" android:layout_weight="1.0">
+                <TextView android:textSize="@dimen/txt_size_six" android:textColor="@color/browse_trans_black" android:id="@id/txt_name" android:clickable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="8.0dip" android:text="AAA" android:singleLine="true" android:layout_alignParentTop="true" />
+                <TextView android:textSize="@dimen/txt_size_fourth" android:textColor="@color/comm_gray_low" android:id="@id/txt_time" android:clickable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="8.0dip" android:text="AAA" android:singleLine="true" android:layout_alignParentBottom="true" />
+            </RelativeLayout>
+            <TextView android:textSize="@dimen/txt_size_fourth" android:textColor="@color/game_blue" android:gravity="center" android:layout_gravity="center" android:id="@id/tv_copy_yard" android:background="@drawable/shape_shield_blue_background" android:paddingLeft="12.0dip" android:paddingTop="6.0dip" android:paddingRight="12.0dip" android:paddingBottom="6.0dip" android:clickable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginRight="10.0dip" android:text="@string/game_copy_yard" android:singleLine="true" />
+            <TextView android:gravity="center" android:id="@id/tv_game_to" android:background="@drawable/img_more_s" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="20.0dip" android:layout_marginRight="12.0dip" />
+        </LinearLayout>
+        <TextView android:background="#ffe9e9e9" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_marginLeft="16.0dip" android:layout_marginTop="8.0dip" android:layout_marginRight="16.0dip" />
+    </LinearLayout>
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/ll_game_get_bag_no_more" android:background="@color/bg_game_line_s" android:visibility="gone" android:clickable="true" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+        <TextView android:textSize="@dimen/txt_size_second" android:textColor="@color/color_selector_comm_gray_high" android:gravity="center" android:id="@id/edit_inputer" android:padding="13.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="没有更多" android:drawablePadding="6.0dip" />
+    </LinearLayout>
+</LinearLayout>

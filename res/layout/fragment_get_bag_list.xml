@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.dmzj.manhua.base.pull.PullToRefreshListView android:id="@id/pull_refresh_list" android:fadingEdge="none" android:layout_width="fill_parent" android:layout_height="fill_parent" android:cacheColorHint="#00000000" android:layout_above="@id/layout_inputer" android:fastScrollEnabled="false" android:headerDividersEnabled="false" android:footerDividersEnabled="false" android:smoothScrollbar="true" ptr:ptrHeaderBackground="@color/my_pull_refresh_header_backgroud" ptr:ptrHeaderTextColor="@color/my_pull_refresh_txt_color" ptr:ptrMode="both" ptr:ptrAnimationStyle="flip" ptr:ptrScrollingWhileRefreshingEnabled="true" ptr:ptrListViewExtrasEnabled="false" xmlns:ptr="http://schemas.android.com/apk/res-auto" />
+    <View android:id="@id/layer_keyboard_control" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <com.dmzj.manhua.views.MyImageView android:id="@id/top_view" android:layout_marginBottom="60.0dip" style="@style/top_arraw" />
+    <ProgressBar android:id="@id/show_comment_progressBar" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="110.0dip" android:layout_centerHorizontal="true" android:layout_centerVertical="true" style="?android:attr/progressBarStyle" />
+    <TextView android:textSize="@dimen/txt_size_third" android:textColor="@color/comm_gray_low" android:gravity="center_horizontal" android:id="@id/tv_no_has" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="100.0dip" android:text="还没有礼包" />
+</RelativeLayout>

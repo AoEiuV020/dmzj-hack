@@ -1,0 +1,293 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?><manifest xmlns:android="http://schemas.android.com/apk/res/android" package="com.dmzj.manhua" platformBuildVersionCode="22" platformBuildVersionName="5.1.1-1819727">
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.REQUEST_INSTALL_PACKAGES"/>
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.BROADCAST_STICKY"/>
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS"/>
+    <uses-permission android:name="android.permission.CHANGE_CONFIGURATION"/>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.WRITE_SETTINGS"/>
+    <uses-permission android:name="android.permission.GET_TASKS"/>
+    <uses-permission android:name="android.permission.VIBRATE"/>
+    <uses-permission android:name="android.permission.BLUETOOTH"/>
+    <uses-permission android:name="android.permission.READ_SETTINGS"/>
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED"/>
+    <uses-permission android:name="android.permission.DISABLE_KEYGUARD"/>
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+    <uses-permission android:name="android.permission.ACCESS_DOWNLOAD_MANAGER"/>
+    <uses-permission android:name="android.permission.DOWNLOAD_WITHOUT_NOTIFICATION"/>
+    <uses-permission android:name="android.permission.EXPAND_STATUS_BAR"/>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+    <uses-permission android:name="baidu.push.permission.WRITE_PUSHINFOPROVIDER.com.dmzj.manhua"/>
+    <permission android:name="baidu.push.permission.WRITE_PUSHINFOPROVIDER.com.dmzj.manhua" android:protectionLevel="normal"/>
+    <application android:allowBackup="true" android:icon="@drawable/ic_launcher" android:label="@string/app_name" android:largeHeap="true" android:name="com.dmzj.manhua.CApplication" android:theme="@style/AppTheme">
+        <meta-data android:name="getLocationInfo" android:value="Yes"/>
+        <meta-data android:name="egAppKey" android:value="5558744919754168d"/>
+        <meta-data android:name="egChannel" android:value="动漫之家"/>
+        <meta-data android:name="UMENG_APPKEY" android:value="541ff3fafd98c52f81008041"/>
+        <meta-data android:name="UMENG_CHANNEL" android:value="101_01_01_000"/>
+        <activity android:label="@string/app_name" android:name="com.dmzj.manhua.ui.LaunchInterceptorActivity" android:screenOrientation="portrait" android:theme="@android:style/Theme.Light.NoTitleBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="dmzj.com" android:pathPrefix="/index" android:scheme="dmzj"/>
+            </intent-filter>
+        </activity>
+        <activity android:launchMode="singleTask" android:name="com.dmzj.manhua.ui.HomeTabsActivitys" android:screenOrientation="portrait" android:theme="@android:style/Theme.Light.NoTitleBar"/>
+        <activity android:name="com.dmzj.manhua.ui.MainSceneCartoonActivity" android:screenOrientation="portrait" android:theme="@android:style/Theme.Black.NoTitleBar"/>
+        <activity android:name="com.dmzj.manhua.ui.MainSceneNovelActivity" android:screenOrientation="portrait" android:theme="@android:style/Theme.Black.NoTitleBar"/>
+        <activity android:name="com.dmzj.manhua.ui.MainSceneNewsActivity" android:screenOrientation="portrait" android:theme="@android:style/Theme.Black.NoTitleBar"/>
+        <activity android:name="com.dmzj.manhua.ui.NewsDetailsActivity" android:screenOrientation="portrait" android:theme="@android:style/Theme.Black.NoTitleBar"/>
+        <activity android:name="com.dmzj.manhua.ui.NewsClassifyActivity" android:screenOrientation="portrait" android:theme="@android:style/Theme.Black.NoTitleBar"/>
+        <activity android:name="com.dmzj.manhua.ui.SearchActivity" android:screenOrientation="portrait" android:theme="@android:style/Theme.Black.NoTitleBar"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:name="com.dmzj.manhua.ui.H5Activity" android:screenOrientation="portrait" android:theme="@android:style/Theme.Black.NoTitleBar">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="dmzj.com" android:pathPrefix="/news" android:scheme="dmzj"/>
+            </intent-filter>
+        </activity>
+        <activity android:name="com.dmzj.manhua.ui.mine.activity.MainSceneMineEnActivity" android:screenOrientation="portrait" android:theme="@android:style/Theme.Black.NoTitleBar"/>
+        <activity android:name="com.dmzj.manhua.ui.mine.activity.MainModifyNameActivity" android:screenOrientation="portrait" android:theme="@android:style/Theme.Black.NoTitleBar"/>
+        <activity android:name="com.dmzj.manhua.ui.CartoonInstructionActivity" android:screenOrientation="portrait" android:theme="@android:style/Theme.Black.NoTitleBar">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="dmzj.com" android:pathPrefix="/comic" android:scheme="dmzj"/>
+            </intent-filter>
+        </activity>
+        <activity android:name="com.dmzj.manhua.ui.CartoonClassifyFilterActivity" android:screenOrientation="portrait" android:theme="@android:style/Theme.Black.NoTitleBar"/>
+        <activity android:name="com.dmzj.manhua.ui.CartoonAboutContentActivity" android:screenOrientation="portrait" android:theme="@android:style/Theme.Black.NoTitleBar"/>
+        <activity android:hardwareAccelerated="true" android:name="com.dmzj.manhua.ui.BrowseActivityAncestors" android:screenOrientation="portrait" android:theme="@android:style/Theme.Black.NoTitleBar.Fullscreen"/>
+        <activity android:name="com.dmzj.manhua.ui.CartoonInstrctionListActivity" android:screenOrientation="portrait" android:theme="@android:style/Theme.Black.NoTitleBar.Fullscreen"/>
+        <activity android:name="com.dmzj.manhua.ui.game.activity.GameMainActivity" android:screenOrientation="portrait" android:theme="@android:style/Theme.Black.NoTitleBar"/>
+        <activity android:name="com.dmzj.manhua.ui.game.activity.GameMainDownListActivity" android:screenOrientation="portrait" android:theme="@android:style/Theme.Black.NoTitleBar"/>
+        <activity android:name="com.dmzj.manhua.ui.game.activity.GameDownActivity" android:screenOrientation="portrait" android:theme="@android:style/Theme.Black.NoTitleBar"/>
+        <activity android:name="com.dmzj.manhua.ui.game.activity.GameGiftBagActivity" android:screenOrientation="portrait" android:theme="@android:style/Theme.Black.NoTitleBar"/>
+        <activity android:name="com.dmzj.manhua.ui.game.activity.GameDetailsActivity" android:screenOrientation="portrait" android:theme="@android:style/Theme.Black.NoTitleBar">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="dmzj.com" android:pathPrefix="/game" android:scheme="dmzj"/>
+            </intent-filter>
+        </activity>
+        <activity android:name="com.dmzj.manhua.ui.game.activity.GameGetGiftBagDetailsActivity" android:screenOrientation="portrait" android:theme="@android:style/Theme.Black.NoTitleBar">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="dmzj.com" android:pathPrefix="/game/gift" android:scheme="dmzj"/>
+            </intent-filter>
+        </activity>
+        <activity android:name="com.dmzj.manhua.ui.SpecialDetailActivity" android:screenOrientation="portrait" android:theme="@android:style/Theme.Black.NoTitleBar">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="dmzj.com" android:pathPrefix="/subject" android:scheme="dmzj"/>
+            </intent-filter>
+        </activity>
+        <activity android:name="com.dmzj.manhua.ui.CartoonSpecialActivity" android:screenOrientation="portrait" android:theme="@android:style/Theme.Black.NoTitleBar"/>
+        <activity android:name="com.dmzj.manhua.ui.SpecialCommentListActivity" android:screenOrientation="portrait" android:theme="@android:style/Theme.Black.NoTitleBar" android:windowSoftInputMode="stateHidden"/>
+        <activity android:name="com.dmzj.manhua.ui.messagecenter.activity.SpecialCommentShowAndMyListActivity" android:screenOrientation="portrait" android:theme="@android:style/Theme.Black.NoTitleBar" android:windowSoftInputMode="stateHidden"/>
+        <activity android:name="com.dmzj.manhua.ui.messagecenter.activity.MessageCenterActivity" android:screenOrientation="portrait" android:theme="@android:style/Theme.Black.NoTitleBar" android:windowSoftInputMode="stateHidden"/>
+        <activity android:name="com.dmzj.manhua.ui.messagecenter.activity.MessageCentterChatActivity" android:screenOrientation="portrait" android:theme="@android:style/Theme.Black.NoTitleBar" android:windowSoftInputMode="stateHidden"/>
+        <activity android:name="com.dmzj.manhua.ui.mine.activity.SpecialCommentDetailActivity" android:screenOrientation="portrait" android:theme="@android:style/Theme.Black.NoTitleBar" android:windowSoftInputMode="stateHidden"/>
+        <activity android:name="com.dmzj.manhua.ui.mine.activity.MineCommentActivity" android:screenOrientation="portrait" android:theme="@android:style/Theme.Black.NoTitleBar"/>
+        <activity android:name="com.dmzj.manhua.ui.newcomment.activity.PushCommentActivity" android:screenOrientation="portrait" android:theme="@android:style/Theme.Black.NoTitleBar"/>
+        <activity android:name="com.dmzj.manhua.ui.mine.activity.MinePushCommentActivity" android:screenOrientation="portrait" android:theme="@android:style/Theme.Black.NoTitleBar"/>
+        <activity android:name="com.dmzj.manhua.ui.newcomment.utils.ReportDialogActivity" android:theme="@style/Theme.ActivityDialogStyle"/>
+        <activity android:name="com.dmzj.manhua.ui.messagecenter.activity.MessagePushCommentActivity" android:screenOrientation="portrait" android:theme="@android:style/Theme.Black.NoTitleBar"/>
+        <activity android:name="com.dmzj.manhua.ui.messagecenter.activity.LetterShieldListActivity" android:screenOrientation="portrait" android:theme="@android:style/Theme.Black.NoTitleBar"/>
+        <activity android:name="com.dmzj.manhua.ui.DownLoadEntranceActivity" android:screenOrientation="portrait" android:theme="@android:style/Theme.Black.NoTitleBar" android:windowSoftInputMode="stateHidden"/>
+        <activity android:name="com.dmzj.manhua.ui.DownLoadLoadingActivity" android:screenOrientation="portrait" android:theme="@android:style/Theme.Black.NoTitleBar"/>
+        <activity android:name="com.dmzj.manhua.ui.AuthorIntroductionJapaneseActivity" android:screenOrientation="portrait" android:theme="@android:style/Theme.Black.NoTitleBar">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="dmzj.com" android:pathPrefix="/author/japan" android:scheme="dmzj"/>
+            </intent-filter>
+        </activity>
+        <activity android:name="com.dmzj.manhua.ui.AuthorIntroductionActivity" android:screenOrientation="portrait" android:theme="@android:style/Theme.Black.NoTitleBar">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="dmzj.com" android:pathPrefix="/author/china" android:scheme="dmzj"/>
+            </intent-filter>
+        </activity>
+        <activity android:name="com.dmzj.manhua.ui.ImagePagerActivity" android:screenOrientation="portrait" android:theme="@android:style/Theme.Black.NoTitleBar"/>
+        <activity android:name="com.dmzj.manhua.ui.PublishViewActivity" android:screenOrientation="portrait" android:theme="@android:style/Theme.Black.NoTitleBar" android:windowSoftInputMode="stateHidden"/>
+        <activity android:name="com.dmzj.manhua.ui.NovelRecentUpdateActivity" android:screenOrientation="portrait" android:theme="@android:style/Theme.Black.NoTitleBar"/>
+        <activity android:name="com.dmzj.manhua.ui.NovelClassifyActivity" android:screenOrientation="portrait" android:theme="@android:style/Theme.Black.NoTitleBar"/>
+        <activity android:name="com.dmzj.manhua.ui.NovelClassifyFilterActivity" android:screenOrientation="portrait" android:theme="@android:style/Theme.Black.NoTitleBar"/>
+        <activity android:name="com.dmzj.manhua.ui.NovelInstructionActivity" android:screenOrientation="portrait" android:theme="@android:style/Theme.Black.NoTitleBar">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="dmzj.com" android:pathPrefix="/novel" android:scheme="dmzj"/>
+            </intent-filter>
+        </activity>
+        <activity android:name="com.dmzj.manhua.ui.NovelChapterListActivity" android:screenOrientation="portrait" android:theme="@android:style/Theme.Black.NoTitleBar"/>
+        <activity android:name="com.dmzj.manhua.ui.NovelRankListActivity" android:screenOrientation="portrait" android:theme="@android:style/Theme.Black.NoTitleBar"/>
+        <activity android:name="com.dmzj.manhua.ui.NovelBookListActivity" android:screenOrientation="portrait" android:theme="@android:style/Theme.Black.NoTitleBar"/>
+        <activity android:name="com.dmzj.manhua.ui.BookListStoreUserListActivity" android:screenOrientation="portrait" android:theme="@android:style/Theme.Black.NoTitleBar"/>
+        <activity android:name="com.dmzj.manhua.ui.BookListDescriptioActivity" android:screenOrientation="portrait" android:theme="@android:style/Theme.Black.NoTitleBar"/>
+        <activity android:name="com.dmzj.manhua.ui.MineCartoonDownActivity" android:screenOrientation="portrait" android:theme="@android:style/Theme.Black.NoTitleBar"/>
+        <activity android:name="com.dmzj.manhua.ui.MineNovelDownActivity" android:screenOrientation="portrait" android:theme="@android:style/Theme.Black.NoTitleBar"/>
+        <activity android:name="com.dmzj.manhua.ui.MineReadHistoryEnActivity" android:screenOrientation="portrait" android:theme="@android:style/Theme.Black.NoTitleBar"/>
+        <activity android:name="com.dmzj.manhua.ui.HisPageActivity" android:screenOrientation="portrait" android:theme="@android:style/Theme.Black.NoTitleBar"/>
+        <activity android:name="com.dmzj.manhua.ui.HisBookListActivity" android:screenOrientation="portrait" android:theme="@android:style/Theme.Black.NoTitleBar"/>
+        <activity android:name="com.dmzj.manhua.ui.HisSubscribeActivity" android:screenOrientation="portrait" android:theme="@android:style/Theme.Black.NoTitleBar"/>
+        <activity android:name="com.dmzj.manhua.ui.HisInstructionActivity" android:screenOrientation="portrait" android:theme="@android:style/Theme.Black.NoTitleBar"/>
+        <activity android:name="com.dmzj.manhua.ui.MineSubscribeActivity" android:screenOrientation="portrait" android:theme="@android:style/Theme.Black.NoTitleBar"/>
+        <activity android:name="com.dmzj.manhua.ui.mine.activity.MineCenterNewsSubscribeActivity" android:screenOrientation="portrait" android:theme="@android:style/Theme.Black.NoTitleBar"/>
+        <activity android:name="com.dmzj.manhua.ui.NovelBrowseActivity" android:screenOrientation="portrait" android:theme="@android:style/Theme.Black.NoTitleBar.Fullscreen"/>
+        <activity android:name="com.dmzj.manhua.ui.mine.activity.UserLoginActivity" android:screenOrientation="portrait" android:theme="@android:style/Theme.Black.NoTitleBar"/>
+        <activity android:name="com.dmzj.manhua.ui.UserRegistActivity" android:screenOrientation="portrait" android:theme="@android:style/Theme.Black.NoTitleBar"/>
+        <activity android:name="com.dmzj.manhua.ui.mine.activity.UserMobileActivity" android:screenOrientation="portrait" android:theme="@android:style/Theme.Black.NoTitleBar"/>
+        <activity android:name="com.dmzj.manhua.ui.mine.activity.UserBindingMobileActivity" android:screenOrientation="portrait" android:theme="@android:style/Theme.Black.NoTitleBar"/>
+        <activity android:name="com.dmzj.manhua.ui.mine.activity.UserBindingEmailActivity" android:screenOrientation="portrait" android:theme="@android:style/Theme.Black.NoTitleBar"/>
+        <activity android:name="com.dmzj.manhua.ui.mine.activity.UserModifyPassWordActivity" android:screenOrientation="portrait" android:theme="@android:style/Theme.Black.NoTitleBar"/>
+        <activity android:name="com.dmzj.manhua.ui.mine.activity.UserForgetPassWordActivity" android:screenOrientation="portrait" android:theme="@android:style/Theme.Black.NoTitleBar"/>
+        <activity android:name="com.dmzj.manhua.ui.mine.activity.UserChangeEamilOrMobileActivity" android:screenOrientation="portrait" android:theme="@android:style/Theme.Black.NoTitleBar"/>
+        <activity android:name="com.dmzj.manhua.ui.mine.activity.UserVerificationEamilActivity" android:screenOrientation="portrait" android:theme="@android:style/Theme.Black.NoTitleBar"/>
+        <activity android:name="com.dmzj.manhua.ui.mine.activity.UserChangeEamilOrMobileTwoActivity" android:screenOrientation="portrait" android:theme="@android:style/Theme.Black.NoTitleBar"/>
+        <activity android:name="com.dmzj.manhua.ui.mine.activity.UserBindingListActivity" android:screenOrientation="portrait" android:theme="@android:style/Theme.Black.NoTitleBar"/>
+        <activity android:name="com.dmzj.manhua.ui.UserNameRepeatActivity" android:theme="@android:style/Theme.Black.NoTitleBar" android:windowSoftInputMode="stateHidden"/>
+        <activity android:name="com.dmzj.manhua.ui.SettingHomeActivity" android:screenOrientation="portrait" android:theme="@android:style/Theme.Black.NoTitleBar"/>
+        <activity android:name="com.dmzj.manhua.ui.mine.activity.SettingModifyInfoActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.dmzj.manhua.ui.SettingMobileDataActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.dmzj.manhua.ui.SettingSecretActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.dmzj.manhua.ui.SettingCartoonReadActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.dmzj.manhua.ui.SettingNovelReadActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.dmzj.manhua.ui.SettingFeedbackActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.dmzj.manhua.ui.SettingAboutUsActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.dmzj.manhua.ui.EditActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.dmzj.manhua.ui.EditBookListActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.dmzj.manhua.ui.ShareActivity" android:theme="@android:style/Theme.Translucent">
+            <intent-filter>
+                <action android:name="com.sina.weibo.sdk.action.ACTION_SDK_REQ_ACTIVITY"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity android:exported="true" android:name="com.dmzj.manhua.PushDispatchActivity" android:theme="@android:style/Theme.Black.NoTitleBar.Fullscreen"/>
+        <receiver android:exported="false" android:name="com.dmzj.manhua.ad.ADBroadCastReceiver">
+            <intent-filter>
+                <action android:name="com.dmzj.manhua.ad.onfileclicked"/>
+            </intent-filter>
+        </receiver>
+        <activity android:exported="true" android:name="com.dmzj.manhua.wxapi.WXEntryActivity"/>
+        <service android:name="com.dmzj.manhua.service.DownLoadService"/>
+        <service android:enabled="true" android:exported="false" android:name="com.dmzj.manhua.ui.game.service.GameDownLoadService">
+            <intent-filter android:priority="0x7FFFFFFF">
+                <action android:name="com.dmzj.manhua.ui.game.service.downloadservice"/>
+            </intent-filter>
+        </service>
+        <receiver android:name="com.baidu.android.pushservice.PushServiceReceiver" android:process=":bdservice_v1">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED"/>
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE"/>
+                <action android:name="com.baidu.android.pushservice.action.notification.SHOW"/>
+                <action android:name="com.baidu.android.pushservice.action.media.CLICK"/>
+                <action android:name="android.intent.action.MEDIA_MOUNTED"/>
+                <action android:name="android.intent.action.USER_PRESENT"/>
+                <action android:name="android.intent.action.ACTION_POWER_CONNECTED"/>
+                <action android:name="android.intent.action.ACTION_POWER_DISCONNECTED"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:name="com.baidu.android.pushservice.RegistrationReceiver" android:process=":bdservice_v1">
+            <intent-filter>
+                <action android:name="com.baidu.android.pushservice.action.METHOD"/>
+                <action android:name="com.baidu.android.pushservice.action.BIND_SYNC"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.PACKAGE_REMOVED"/>
+                <data android:scheme="package"/>
+            </intent-filter>
+        </receiver>
+        <service android:exported="true" android:name="com.baidu.android.pushservice.PushService" android:process=":bdservice_v1">
+            <intent-filter>
+                <action android:name="com.baidu.android.pushservice.action.PUSH_SERVICE"/>
+            </intent-filter>
+        </service>
+        <service android:exported="true" android:name="com.baidu.android.pushservice.CommandService"/>
+        <provider android:authorities="com.dmzj.manhua.bdpush" android:exported="true" android:name="com.baidu.android.pushservice.PushInfoProvider" android:protectionLevel="signature" android:writePermission="baidu.push.permission.WRITE_PUSHINFOPROVIDER.com.dmzj.manhua"/>
+        <receiver android:name="com.dmzj.manhua.push.MyPushMessageReceiver">
+            <intent-filter>
+                <action android:name="com.baidu.android.pushservice.action.MESSAGE"/>
+                <action android:name="com.baidu.android.pushservice.action.RECEIVE"/>
+                <action android:name="com.baidu.android.pushservice.action.notification.CLICK"/>
+            </intent-filter>
+        </receiver>
+        <meta-data android:name="api_key" android:value="9B1FTRcHTr4NyoEVgpcghfXz"/>
+        <activity android:launchMode="singleTask" android:name="com.tencent.tauth.AuthActivity" android:noHistory="true">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:scheme="tencent101131188"/>
+            </intent-filter>
+        </activity>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:name="com.tencent.connect.common.AssistActivity" android:theme="@android:style/Theme.Translucent.NoTitleBar"/>
+        <receiver android:exported="false" android:name="com.dmzj.manhua.receiver.DownLoadReciver">
+            <intent-filter>
+                <action android:name="cn.hebtu.lgy.donwload.complete"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:name="com.dmzj.manhua.receiver.ConnectionChangeReceiver">
+            <intent-filter>
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE"/>
+            </intent-filter>
+        </receiver>
+        <uses-library android:name="android.test.runner"/>
+        <meta-data android:name="io.fabric.ApiKey" android:value="5a11af751e91c42f39dbb8d007063cbcfc92570f"/>
+        <instrumentation android:label="test" android:name="android.test.InstrumentationTestRunner" android:targetPackage="com.dmzj.manhua"/>
+        <receiver android:name="com.dmzj.manhua.ui.game.service.MyInstalledReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.PACKAGE_ADDED"/>
+                <data android:scheme="package"/>
+            </intent-filter>
+        </receiver>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenSize" android:name="com.qq.e.ads.ADActivity"/>
+        <service android:exported="false" android:name="com.qq.e.comm.DownloadService"/>
+        <service android:name="com.bayescom.sdk.BayesDownloadService"/>
+        <activity android:configChanges="orientation|screenSize" android:name="com.bayescom.sdk.BayesActivity"/>
+        <activity android:launchMode="singleTask" android:name="com.bytedance.sdk.openadsdk.activity.TTLandingPageActivity" android:theme="@android:style/Theme.NoTitleBar.Fullscreen"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:launchMode="singleTask" android:name="com.bytedance.sdk.openadsdk.activity.TTVideoLandingPageActivity"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:launchMode="singleTask" android:name="com.bytedance.sdk.openadsdk.activity.TTRewardVideoActivity" android:screenOrientation="landscape"/>
+        <activity android:launchMode="singleTask" android:name="com.bytedance.sdk.openadsdk.activity.TTDelegateActivity" android:theme="@android:style/Theme.Translucent.NoTitleBar"/>
+        <service android:name="com.bytedance.sdk.openadsdk.service.TTDownloadService"/>
+        <service android:name="com.bytedance.sdk.openadsdk.service.TTDownloadHandlerService"/>
+        <service android:enabled="true" android:exported="true" android:name="com.eguan.monitor.fangzhou.service.MonitorService" android:process=":monitorService"/>
+        <service android:name="com.eguan.monitor.fangzhou.service.MonitorJobService" android:permission="android.permission.BIND_JOB_SERVICE" android:process=":monitorService"/>
+        <service android:enabled="true" android:exported="true" android:name="com.eguan.monitor.fangzhou.service.EgAccessibilityService" android:permission="android.permission.BIND_ACCESSIBILITY_SERVICE" android:process=":monitorService"/>
+        <receiver android:name="com.eguan.monitor.receiver.SystemStartReceiver">
+            <intent-filter android:priority="9999">
+                <action android:name="android.intent.action.BOOT_COMPLETED"/>
+                <action android:name="android.intent.action.USER_PRESENT"/>
+                <action android:name="android.intent.action.ACTION_POWER_CONNECTED"/>
+                <action android:name="android.intent.action.ACTION_POWER_DISCONNECTED"/>
+            </intent-filter>
+        </receiver>
+        <provider android:authorities="com.dmzj.manhua.fileprovider" android:exported="false" android:grantUriPermissions="true" android:name="android.support.v4.content.FileProvider">
+            <meta-data android:name="android.support.FILE_PROVIDER_PATHS" android:resource="@xml/gdt_file_path"/>
+        </provider>
+        <service android:exported="false" android:name="com.qq.e.comm.DownloadService"/>
+        <provider android:authorities="com.dmzj.manhua.crashlyticsinitprovider" android:exported="false" android:initOrder="100" android:name="com.crashlytics.android.CrashlyticsInitProvider"/>
+    </application>
+</manifest>

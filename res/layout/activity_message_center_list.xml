@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@color/comm_gray_low_small" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include android:id="@id/layout_title" layout="@layout/navigation_bar_default" />
+    <include layout="@layout/block_editstatus_oprations" />
+    <LinearLayout android:orientation="vertical" android:id="@id/ll_teamwork" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/layout_title">
+        <LinearLayout android:orientation="horizontal" android:id="@id/id_switch_tab_ll" android:background="@android:color/white" android:layout_width="fill_parent" android:layout_height="wrap_content" android:baselineAligned="false">
+            <RelativeLayout android:gravity="center" android:id="@id/ll_tab_message_reply_my" android:clickable="true" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+                <TextView android:textSize="15.0dip" android:textColor="@color/comm_blue_high" android:layout_gravity="center" android:id="@id/tab_message_reply_my" android:paddingTop="10.0dip" android:paddingBottom="10.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/message_center_reply_mine" />
+                <ImageView android:id="@id/reply_unread_count" android:visibility="visible" android:layout_width="10.0dip" android:layout_height="10.0dip" android:layout_marginTop="4.0dip" android:src="@drawable/icon_message_unread" android:layout_toRightOf="@id/tab_message_reply_my" />
+            </RelativeLayout>
+            <RelativeLayout android:gravity="center" android:orientation="horizontal" android:id="@id/ll_tab_message_private_letter" android:clickable="false" android:saveEnabled="false" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+                <TextView android:textSize="15.0dip" android:textColor="@android:color/black" android:gravity="center" android:id="@id/tab_message_private_letter" android:paddingTop="10.0dip" android:paddingBottom="10.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/message_center_private_letter" />
+                <ImageView android:id="@id/letter_unread_count" android:visibility="visible" android:layout_width="10.0dip" android:layout_height="10.0dip" android:layout_marginTop="4.0dip" android:src="@drawable/icon_message_unread" android:layout_toRightOf="@id/tab_message_private_letter" />
+            </RelativeLayout>
+        </LinearLayout>
+        <RelativeLayout android:layout_width="fill_parent" android:layout_height="1.0dip">
+            <ImageView android:id="@id/id_tab_line_iv" android:background="@color/btn_big_green_deep" android:layout_width="125.0dip" android:layout_height="1.0dip" android:layout_alignParentBottom="true" android:contentDescription="tab" />
+        </RelativeLayout>
+        <android.support.v4.view.ViewPager android:layout_gravity="center" android:id="@id/tabpager" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="8.0dip" android:isScrollContainer="false" />
+    </LinearLayout>
+</RelativeLayout>

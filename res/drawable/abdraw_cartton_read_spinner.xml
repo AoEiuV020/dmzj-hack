@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animation-list android:oneshot="false"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:duration="120" android:drawable="@drawable/bitch_01" />
+    <item android:duration="120" android:drawable="@drawable/bitch_02" />
+    <item android:duration="120" android:drawable="@drawable/bitch_03" />
+    <item android:duration="120" android:drawable="@drawable/bitch_04" />
+    <item android:duration="120" android:drawable="@drawable/bitch_05" />
+    <item android:duration="120" android:drawable="@drawable/bitch_06" />
+    <item android:duration="120" android:drawable="@drawable/bitch_07" />
+    <item android:duration="120" android:drawable="@drawable/bitch_08" />
+    <item android:duration="120" android:drawable="@drawable/bitch_09" />
+    <item android:duration="120" android:drawable="@drawable/bitch_10" />
+    <item android:duration="120" android:drawable="@drawable/bitch_11" />
+    <item android:duration="120" android:drawable="@drawable/bitch_12" />
+    <item android:duration="120" android:drawable="@drawable/bitch_13" />
+</animation-list>

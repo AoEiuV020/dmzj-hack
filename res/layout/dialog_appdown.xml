@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/layout_main" android:background="@android:color/transparent" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:background="@drawable/shape_rectangle_gray_low_small" android:layout_width="300.0dip" android:layout_height="70.0dip" android:layout_marginBottom="50.0dip" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true">
+        <TextView android:textStyle="bold" android:textColor="@color/comm_gray_mid" android:id="@id/post_title" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginTop="10.0dip" android:text="@string/app_name" />
+        <ProgressBar android:id="@id/progressBar1" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginTop="8.0dip" android:layout_marginRight="10.0dip" android:maxHeight="4.0dip" android:progressDrawable="@drawable/po_seekbar" android:minHeight="4.0dip" android:layout_below="@id/post_title" style="?android:attr/progressBarStyleHorizontal" />
+        <TextView android:textColor="@color/comm_gray_mid" android:id="@id/txt_downcount" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginTop="5.0dip" android:text="0/0" android:layout_below="@id/progressBar1" />
+    </RelativeLayout>
+</RelativeLayout>

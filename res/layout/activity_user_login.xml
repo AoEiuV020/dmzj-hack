@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/comm_gray_low_small" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include android:id="@id/layout_title" layout="@layout/navigation_bar_default" />
+    <LinearLayout android:layout_marginTop="20.0dip" style="@style/layout_login_regist">
+        <TextView android:drawableLeft="@drawable/img_icon_headp" style="@style/view_login_regist_inputer_left" />
+        <EditText android:id="@id/edit_username" android:hint="@string/user_login_account_hint" android:singleLine="true" style="@style/view_login_regist_edittext" />
+    </LinearLayout>
+    <LinearLayout android:layout_marginTop="10.0dip" style="@style/layout_login_regist">
+        <TextView android:drawableLeft="@drawable/img_icon_clockp" style="@style/view_login_regist_inputer_left" />
+        <EditText android:id="@id/edit_password" android:hint="@string/user_login_pwd_hint" android:inputType="textPassword" style="@style/view_login_regist_edittext" />
+    </LinearLayout>
+    <TextView android:textSize="@dimen/txt_size_second" android:textColor="@color/color_selector_comm_gray_mid" android:layout_gravity="right" android:id="@id/tv_forgot_pwd" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="15.0dip" android:layout_marginRight="10.0dip" android:text="@string/txt_forgot_pwd" />
+    <Button android:textSize="@dimen/txt_size_second" android:textColor="@android:color/white" android:gravity="center" android:id="@id/btn_login" android:background="@drawable/shape_rectangle_regist_button_selector" android:layout_width="fill_parent" android:layout_height="@dimen/line_option_button_height" android:layout_marginLeft="@dimen/common_ui_horizontal_marg" android:layout_marginTop="40.0dip" android:layout_marginRight="@dimen/common_ui_horizontal_marg" android:text="@string/user_login_entrance" />
+    <TextView android:textSize="@dimen/txt_size_second" android:textColor="@color/browse_trans_black" android:gravity="center_horizontal" android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/common_ui_horizontal_marg" android:layout_marginTop="20.0dip" android:layout_marginRight="@dimen/common_ui_horizontal_marg" android:text="@string/user_login_bottom_text" android:singleLine="true" android:drawableLeft="@drawable/common_divider_line_black" android:drawableRight="@drawable/common_divider_line_black" />
+    <LinearLayout android:gravity="center_horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/common_ui_horizontal_marg" android:layout_marginTop="20.0dip" android:layout_marginRight="@dimen/common_ui_horizontal_marg">
+        <com.dmzj.manhua.views.MyImageView android:id="@id/iv_sinalogin" android:layout_width="45.0dip" android:layout_height="45.0dip" android:src="@drawable/img_icon_wb" />
+        <com.dmzj.manhua.views.MyImageView android:id="@id/iv_qqlogin" android:layout_width="45.0dip" android:layout_height="45.0dip" android:layout_marginLeft="15.0dip" android:src="@drawable/img_qq" />
+        <com.dmzj.manhua.views.MyImageView android:id="@id/iv_wxlogin" android:layout_width="45.0dip" android:layout_height="45.0dip" android:layout_marginLeft="15.0dip" android:src="@drawable/img_share_weixin" />
+    </LinearLayout>
+</LinearLayout>

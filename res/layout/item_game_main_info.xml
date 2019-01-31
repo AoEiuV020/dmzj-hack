@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/layout_main" android:background="@drawable/selector_shape_white_gray_low_small" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="horizontal" android:id="@id/ll_game_main_down" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:id="@id/ll_game_main_dowm_s" android:paddingLeft="12.0dip" android:paddingBottom="16.0dip" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="3.0">
+            <ImageView android:id="@id/iv_game_main_photo" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="16.0dip" android:minWidth="@dimen/view_game_width" android:minHeight="@dimen/view_game_width" android:layout_centerInParent="true" />
+            <LinearLayout android:layout_gravity="center" android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginLeft="12.0dip" android:layout_weight="1.0">
+                <TextView android:textSize="@dimen/txt_size_third" android:textColor="@color/comm_gray_high" android:id="@id/tv_game_main_name" android:paddingTop="8.0dip" android:clickable="false" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="崩坏学园2崩坏学园2崩坏学园2崩坏学园2崩坏学园2崩坏学园2崩坏学园2崩坏学园2崩坏学园2崩坏学园2崩坏学园2崩坏学园2崩坏学园2崩坏学园2崩坏学园2崩坏学园2崩坏学园2崩坏学园2崩坏学园2崩坏学园2崩坏学园2崩坏学园2崩坏学园2崩坏学园2" android:maxLines="2" android:singleLine="true" />
+                <TextView android:textSize="@dimen/txt_size_fourth" android:textColor="@color/comm_gray_low" android:id="@id/tv_game_main_content" android:paddingTop="5.0dip" android:clickable="false" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="sss" android:maxLines="2" android:singleLine="true" />
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout android:layout_gravity="center" android:orientation="horizontal" android:paddingRight="12.0dip" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+            <LinearLayout android:orientation="horizontal" android:id="@id/ll_game_main_item_content" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="12.0dip">
+                <RelativeLayout android:gravity="center" android:orientation="horizontal" android:background="@drawable/layer_text_progress_bg" android:layout_width="64.0dip" android:layout_height="30.0dip">
+                    <com.dmzj.manhua.ui.game.utils.TextProgressBar android:id="@id/pb_down_game_number" android:layout_width="64.0dip" android:layout_height="30.0dip" android:max="100" android:progress="0" style="@style/StyleTextProgressBar" />
+                    <TextView android:textSize="@dimen/txt_size_fourth" android:textColor="@color/bg_game_blue" android:gravity="center" android:id="@id/tv_game_main_shield" android:visibility="gone" android:clickable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="下载" android:singleLine="true" android:drawableLeft="@drawable/icon_game_down" android:drawablePadding="6.0dip" android:layout_centerInParent="true" />
+                </RelativeLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+    <TextView android:background="@color/bg_game_line" android:layout_width="fill_parent" android:layout_height="0.5dip" android:layout_marginLeft="12.0dip" android:layout_marginRight="12.0dip" />
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/layout_game_show_list" android:background="@color/comm_gray_low_small" android:visibility="gone" android:clickable="true" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+        <TextView android:textSize="@dimen/txt_size_second" android:textColor="@color/comm_gray_low" android:gravity="center" android:id="@id/edit_inputer" android:background="@color/comm_gray_low_small" android:padding="13.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="全部游戏" android:drawableRight="@drawable/icon_game_to" android:drawablePadding="6.0dip" />
+    </LinearLayout>
+</LinearLayout>

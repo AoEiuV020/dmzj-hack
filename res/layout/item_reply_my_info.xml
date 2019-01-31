@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:id="@id/layout_main" android:background="@android:color/white" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <com.dmzj.manhua.views.MyImageView android:id="@id/img_head" android:layout_width="35.0dip" android:layout_height="35.0dip" android:layout_marginLeft="10.0dip" android:layout_marginTop="5.0dip" />
+        <LinearLayout android:orientation="vertical" android:id="@id/ll_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="8.0dip" android:layout_toRightOf="@id/img_head" android:layout_alignTop="@id/img_head">
+            <TextView android:textSize="@dimen/activity_vertical_margin" android:textColor="@color/browse_trans_black" android:id="@id/txt_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="sssss" />
+            <LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dip">
+                <TextView android:textSize="@dimen/txt_size_fourth" android:textColor="@color/comm_gray_low" android:id="@id/txt_time" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="sssss" />
+                <TextView android:textSize="@dimen/txt_size_fourth" android:textColor="@color/comm_gray_low" android:id="@id/txt_production_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginRight="18.0dip" android:text="所发生的防守打法" android:maxLines="1" />
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout android:id="@id/ll_content" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="2.0dip" android:layout_below="@id/ll_name" android:layout_alignLeft="@id/ll_name">
+            <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <TextView android:textSize="@dimen/txt_size_second" android:textColor="@color/comm_gray_mid" android:ellipsize="end" android:id="@id/txt_content" android:paddingRight="3.0dip" android:clickable="true" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:layout_marginRight="18.0dip" android:text="所发生的防守打法" android:maxLines="4" android:lineSpacingExtra="2.0dip" android:lineSpacingMultiplier="1.5" />
+                <TextView android:textSize="@dimen/txt_size_third" android:textColor="@color/color_launch_bac" android:gravity="right" android:id="@id/txt_content_show_all" android:padding="6.0dip" android:visibility="gone" android:clickable="true" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="3.0dip" android:layout_marginRight="18.0dip" android:text="显示全部" />
+                <TextView android:textSize="@dimen/txt_size_third" android:textColor="@color/color_launch_bac" android:gravity="right" android:id="@id/txt_content_hide_all" android:padding="6.0dip" android:visibility="gone" android:clickable="true" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="3.0dip" android:layout_marginRight="18.0dip" android:text="收起" />
+            </LinearLayout>
+        </LinearLayout>
+        <TextView android:textSize="@dimen/txt_size_third" android:textColor="@color/comm_gray_low" android:ellipsize="end" android:id="@id/txt_content_s" android:background="@drawable/comment_item_bg" android:padding="8.0dip" android:paddingRight="3.0dip" android:clickable="true" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:layout_marginRight="18.0dip" android:layout_marginBottom="10.0dip" android:text="所发生的防守打法" android:maxLines="2" android:layout_below="@id/ll_content" android:layout_alignLeft="@id/ll_name" android:lineSpacingExtra="2.0dip" android:lineSpacingMultiplier="1.5" />
+        <TextView android:background="@color/comm_gray_low_small" android:layout_width="fill_parent" android:layout_height="8.0dip" android:layout_below="@id/txt_content_s" />
+    </RelativeLayout>
+</LinearLayout>

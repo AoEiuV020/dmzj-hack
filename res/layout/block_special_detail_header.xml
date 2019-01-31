@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/comm_gray_low_small" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/title_img" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="10.0dip" />
+    <TextView android:textSize="@dimen/txt_size_second" android:textColor="@color/comm_gray_high" android:id="@id/txt_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginRight="10.0dip" android:singleLine="true" />
+    <TextView android:textSize="@dimen/txt_size_third" android:textColor="@color/comm_gray_mid" android:id="@id/txt_desc" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="10.0dip" />
+    <LinearLayout android:orientation="horizontal" android:background="@drawable/shape_rectangle_white_top_gray_line" android:layout_width="fill_parent" android:layout_height="44.0dip">
+        <RelativeLayout android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+            <TextView android:textSize="@dimen/txt_size_third" android:textColor="@color/color_selector_comm_gray_mid" android:gravity="center" android:id="@id/op_txt_first" android:layout_width="wrap_content" android:layout_height="fill_parent" android:text="@string/special_subscribe_all" android:drawableLeft="@drawable/img_subscribe_grey" android:drawablePadding="2.0dip" android:layout_centerInParent="true" />
+        </RelativeLayout>
+        <ImageView android:layout_width="1.0dip" android:layout_height="fill_parent" android:src="@drawable/intro_navi_vline" />
+        <RelativeLayout android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+            <TextView android:textSize="@dimen/txt_size_third" android:textColor="@color/color_selector_comm_gray_mid" android:gravity="center" android:id="@id/op_txt_second" android:layout_width="wrap_content" android:layout_height="fill_parent" android:text="@string/special_share" android:drawableLeft="@drawable/img_share_icon" android:drawablePadding="2.0dip" android:layout_centerInParent="true" />
+        </RelativeLayout>
+        <ImageView android:layout_width="1.0dip" android:layout_height="fill_parent" android:src="@drawable/intro_navi_vline" />
+        <RelativeLayout android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+            <TextView android:textSize="@dimen/txt_size_third" android:textColor="@color/color_selector_comm_gray_mid" android:gravity="center" android:id="@id/op_txt_third" android:layout_width="wrap_content" android:layout_height="fill_parent" android:text="@string/special_discuss" android:drawableLeft="@drawable/img_discuss_gray" android:drawablePadding="2.0dip" android:layout_centerInParent="true" />
+        </RelativeLayout>
+    </LinearLayout>
+    <View android:background="@android:color/transparent" android:layout_width="fill_parent" android:layout_height="10.0dip" />
+</LinearLayout>

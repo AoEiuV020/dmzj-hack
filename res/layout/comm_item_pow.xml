@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:background="@drawable/comment_pop_item" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:gravity="center" android:id="@id/tv_item_comment_like" android:padding="8.0dip" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="赞一个" android:layout_weight="1.0" />
+    <TextView android:gravity="center" android:id="@id/tv_item_comment_copy" android:padding="8.0dip" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="复制" android:layout_weight="1.0" />
+    <TextView android:gravity="center" android:id="@id/tv_item_comment_reply" android:padding="8.0dip" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="回复" android:layout_weight="1.0" />
+    <TextView android:gravity="center" android:id="@id/tv_item_comment_inform" android:padding="8.0dip" android:visibility="gone" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="举报" android:layout_weight="1.0" />
+</LinearLayout>

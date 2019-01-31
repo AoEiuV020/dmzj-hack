@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@android:color/transparent" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:background="@drawable/shape_rectangle_color_white_border_gray" android:layout_width="270.0dip" android:layout_height="160.0dip" android:layout_centerInParent="true">
+        <TextView android:textSize="@dimen/txt_size_first" android:textColor="@color/comm_gray_mid" android:gravity="center_vertical" android:id="@id/dia_title" android:layout_width="fill_parent" android:layout_height="30.0dip" android:layout_marginLeft="15.0dip" android:layout_marginTop="10.0dip" android:layout_marginRight="15.0dip" android:text="@string/txt_warning" />
+        <View android:background="@color/comm_gray_lower" android:layout_width="fill_parent" android:layout_height="1.0px" android:layout_marginTop="42.0dip" />
+        <TextView android:textSize="@dimen/txt_size_second" android:textColor="@color/comm_gray_low" android:gravity="center_vertical" android:id="@id/dialog_info" android:layout_width="fill_parent" android:layout_height="60.0dip" android:layout_marginLeft="15.0dip" android:layout_marginTop="48.0dip" android:layout_marginRight="15.0dip" />
+        <TextView android:textSize="@dimen/txt_size_first" android:textColor="@color/color_selector_comm_gray_high" android:gravity="center" android:id="@id/btn_confirm" android:clickable="true" android:layout_width="150.0dip" android:layout_height="45.0dip" android:text="@string/txt_confirm" android:layout_alignParentRight="true" android:layout_alignParentBottom="true" />
+        <View android:background="@color/comm_gray_lower" android:layout_width="fill_parent" android:layout_height="1.0px" android:layout_marginBottom="45.0dip" android:layout_alignParentBottom="true" />
+        <TextView android:textSize="@dimen/txt_size_first" android:textColor="@color/color_selector_comm_gray_high" android:gravity="center" android:id="@id/btn_cancel" android:clickable="true" android:layout_width="150.0dip" android:layout_height="45.0dip" android:text="@string/txt_cancel" android:layout_alignParentBottom="true" />
+        <View android:background="@color/comm_gray_lower" android:layout_width="1.0px" android:layout_height="45.0dip" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" />
+        <TextView android:textSize="@dimen/txt_size_first" android:textColor="@color/color_selector_comm_gray_high" android:gravity="center" android:id="@id/btn_confirm_one_btn" android:visibility="gone" android:clickable="true" android:layout_width="fill_parent" android:layout_height="45.0dip" android:text="@string/txt_confirm" android:layout_alignParentBottom="true" />
+    </RelativeLayout>
+</RelativeLayout>

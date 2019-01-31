@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/dia_all" android:background="@android:color/transparent" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:background="@drawable/shape_mine_rectangle_color_white_border_gray" android:layout_width="300.0dip" android:layout_height="160.0dip" android:layout_centerInParent="true">
+        <TextView android:textSize="@dimen/txt_size_first" android:textColor="@color/comm_gray_mid" android:gravity="center" android:id="@id/dia_title" android:layout_width="fill_parent" android:layout_height="30.0dip" android:layout_marginLeft="15.0dip" android:layout_marginTop="10.0dip" android:layout_marginRight="15.0dip" android:text="提示" />
+        <TextView android:textSize="@dimen/txt_size_second" android:textColor="@color/browse_trans_black" android:gravity="center_vertical" android:id="@id/dialog_info" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:layout_marginTop="48.0dip" android:layout_marginRight="15.0dip" />
+        <TextView android:textSize="@dimen/txt_size_first" android:textColor="@color/bg_blue" android:gravity="center" android:id="@id/btn_confirm_one_btn" android:clickable="true" android:layout_width="fill_parent" android:layout_height="45.0dip" android:text="我要绑定" android:layout_alignParentBottom="true" />
+        <TextView android:id="@id/tv_lines" android:background="@color/bg_binding_line_dialog" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_marginLeft="15.0dip" android:layout_marginRight="15.0dip" android:layout_marginBottom="12.0dip" android:layout_alignTop="@id/btn_confirm_one_btn" />
+    </RelativeLayout>
+</RelativeLayout>

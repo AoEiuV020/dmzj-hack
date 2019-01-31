@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/layout_main" android:background="@drawable/selector_shape_white_gray_low_small" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center" android:layout_gravity="center" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="15.0dip" android:layout_marginBottom="10.0dip">
+        <com.dmzj.manhua.views.MyImageView android:layout_gravity="center" android:id="@id/img_head" android:background="@drawable/img_def_head" android:layout_width="35.0dip" android:layout_height="35.0dip" android:layout_marginLeft="10.0dip" />
+        <TextView android:textSize="@dimen/txt_size_second" android:textColor="@color/comm_gray_high" android:layout_gravity="center" android:id="@id/txt_name" android:clickable="false" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginRight="60.0dip" android:text="AAA" android:singleLine="true" android:layout_weight="1.0" />
+        <TextView android:textSize="@dimen/txt_size_second" android:textColor="@color/comm_gray_mid" android:gravity="center" android:layout_gravity="center" android:id="@id/tv_shield" android:background="@drawable/shape_shield_background" android:paddingLeft="12.0dip" android:paddingTop="6.0dip" android:paddingRight="12.0dip" android:paddingBottom="6.0dip" android:clickable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginRight="10.0dip" android:text="解除屏蔽" android:singleLine="true" />
+    </LinearLayout>
+    <TextView android:background="#ffe9e9e9" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_marginLeft="20.0dip" android:layout_marginTop="8.0dip" android:layout_marginRight="20.0dip" android:layout_marginBottom="6.0dip" />
+</LinearLayout>

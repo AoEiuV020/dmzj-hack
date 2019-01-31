@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:background="@color/comm_gray_low_small" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include android:id="@id/layout_title" layout="@layout/navigation_bar_default" />
+    <LinearLayout android:orientation="vertical" android:id="@id/layout_linear" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/layout_title">
+        <Button android:id="@id/button1" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="按钮1" />
+        <Button android:id="@id/button2" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="按钮2" />
+    </LinearLayout>
+</RelativeLayout>

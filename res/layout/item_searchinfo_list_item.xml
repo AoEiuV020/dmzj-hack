@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:id="@id/layout_main" android:background="@drawable/selector_shape_white_gray_low_small" android:clickable="true" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/img_main_pic" android:layout_width="@dimen/view_cartoon_width_first" android:layout_height="@dimen/view_cartoon_height_first" android:layout_marginLeft="15.0dip" android:layout_centerVertical="true" />
+    <TextView android:textSize="@dimen/txt_size_third" android:textColor="@color/comm_gray_mid" android:gravity="center|right" android:id="@id/txt_chapter" android:background="@drawable/trans_pic" android:visibility="invisible" android:layout_width="@dimen/view_cartoon_width_first" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:layout_marginTop="110.0dip" android:layout_marginRight="2.0dip" android:singleLine="true" android:layout_alignRight="@id/img_main_pic" />
+    <LinearLayout android:orientation="vertical" android:paddingLeft="10.0dip" android:paddingTop="15.0dip" android:layout_width="fill_parent" android:layout_height="145.0dip" android:layout_marginLeft="10.0dip" android:layout_marginRight="25.0dip" android:layout_toRightOf="@id/img_main_pic" android:layout_centerVertical="true">
+        <TextView android:textSize="@dimen/txt_size_first" android:textColor="@color/comm_gray_high" android:id="@id/txt_title" android:layout_width="fill_parent" android:layout_height="wrap_content" android:singleLine="true" />
+        <TextView android:textSize="@dimen/txt_size_third" android:textColor="@color/comm_gray_mid" android:id="@id/txt_author" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="4.0dip" android:singleLine="true" />
+        <TextView android:textSize="@dimen/txt_size_third" android:textColor="@color/comm_gray_mid" android:id="@id/txt_class" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="4.0dip" android:singleLine="true" />
+        <TextView android:textSize="@dimen/txt_size_third" android:textColor="@color/comm_gray_mid" android:id="@id/txt_latests" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="4.0dip" />
+    </LinearLayout>
+</RelativeLayout>

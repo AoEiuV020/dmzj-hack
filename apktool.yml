@@ -1,0 +1,59 @@
+!!brut.androlib.meta.MetaInfo
+apkFileName: dmzj-2.7.apk
+compressionType: false
+doNotCompress:
+- arsc
+- png
+- jpg
+- res/drawable-hdpi-v4/gdt_ic_seekbar_background.9.png
+- res/drawable-hdpi-v4/gdt_ic_seekbar_progress.9.png
+- res/drawable-xhdpi-v4/bg_item_s.9.png
+- res/drawable-xhdpi-v4/bg_message_center_bubble_gray.9.png
+- res/drawable-xhdpi-v4/bg_message_center_purple.9.png
+- res/drawable-xhdpi-v4/bg_subscribe_names.9.png
+- res/drawable-xhdpi-v4/bg_time_message_all.9.png
+- res/drawable-xhdpi-v4/book_bg.9.png
+- res/drawable-xhdpi-v4/browse_light_hornavibar.9.png
+- res/drawable-xhdpi-v4/btn_common_blue.9.png
+- res/drawable-xhdpi-v4/btn_common_gray.9.png
+- res/drawable-xhdpi-v4/icon_message_letter_bg_s.9.png
+- res/drawable-xhdpi-v4/img_cartoon_redbac.9.png
+- res/drawable-xhdpi-v4/img_cartoon_status_bac_sel.9.png
+- res/drawable-xhdpi-v4/img_cartoon_transbac.9.png
+- res/drawable-xhdpi-v4/img_chapter_down_draw.9.png
+- res/drawable-xhdpi-v4/img_chapter_new_down.9.png
+- res/drawable-xhdpi-v4/img_commbtn_trans.9.png
+- res/drawable-xhdpi-v4/img_new_icon_draw.9.png
+- res/drawable-xhdpi-v4/input_frame.9.png
+- res/drawable-xhdpi-v4/main_tabbar_bac.9.png
+- res/drawable-xhdpi-v4/publish_voice_back.9.png
+- res/drawable-xhdpi-v4/search_barbac.9.png
+- res/drawable-xhdpi-v4/tt_shadow_fullscreen_top.9.png
+- res/drawable-xxhdpi-v4/gdt_ic_seekbar_background.9.png
+- res/drawable-xxhdpi-v4/gdt_ic_seekbar_progress.9.png
+isFrameworkApk: false
+packageInfo:
+  forcedPackageId: '127'
+  renameManifestPackage: null
+sdkInfo:
+  minSdkVersion: '16'
+  targetSdkVersion: '20'
+sharedLibrary: false
+sparseResources: false
+unknownFiles:
+  com/androidquery/util/web_image.html: '8'
+  com/baidu/android/pushservice/assets/defaultconfig.json: '8'
+  com/sina/weibo/sdk/net/cacert.cer: '8'
+  fabric/com.crashlytics.sdk.android.answers.properties: '8'
+  fabric/com.crashlytics.sdk.android.beta.properties: '8'
+  fabric/com.crashlytics.sdk.android.crashlytics-core.properties: '8'
+  fabric/com.crashlytics.sdk.android.crashlytics.properties: '8'
+  fabric/io.fabric.sdk.android.fabric.properties: '8'
+usesFramework:
+  ids:
+  - 1
+  tag: null
+version: 2.3.4
+versionInfo:
+  versionCode: '103'
+  versionName: 2.7.009
