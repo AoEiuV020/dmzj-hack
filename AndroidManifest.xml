@@ -69,7 +69,7 @@
         </activity>
         <activity android:name="com.dmzj.manhua.ui.CartoonClassifyFilterActivity" android:screenOrientation="portrait" android:theme="@android:style/Theme.Black.NoTitleBar"/>
         <activity android:name="com.dmzj.manhua.ui.CartoonAboutContentActivity" android:screenOrientation="portrait" android:theme="@android:style/Theme.Black.NoTitleBar"/>
-        <activity android:hardwareAccelerated="true" android:name="com.dmzj.manhua.ui.BrowseActivityAncestors" android:screenOrientation="portrait" android:theme="@android:style/Theme.Black.NoTitleBar.Fullscreen"/>
+        <activity android:hardwareAccelerated="true" android:name="com.dmzj.manhua.ui.BrowseActivityAncestors" android:screenOrientation="portrait" android:theme="@android:style/Theme.Black.NoTitleBar"/>
         <activity android:name="com.dmzj.manhua.ui.CartoonInstrctionListActivity" android:screenOrientation="portrait" android:theme="@android:style/Theme.Black.NoTitleBar.Fullscreen"/>
         <activity android:name="com.dmzj.manhua.ui.game.activity.GameMainActivity" android:screenOrientation="portrait" android:theme="@android:style/Theme.Black.NoTitleBar"/>
         <activity android:name="com.dmzj.manhua.ui.game.activity.GameMainDownListActivity" android:screenOrientation="portrait" android:theme="@android:style/Theme.Black.NoTitleBar"/>
